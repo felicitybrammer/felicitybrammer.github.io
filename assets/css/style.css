@@ -21,7 +21,7 @@
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-           0.125em 0.125em 0.25em rgba(0,0,0,.15) ;
+          0.125em 0.125em 0.25em rgba(0,0,0,.15) ;
 
 }
 
@@ -49,6 +49,14 @@ section {
     padding: 5em 2em;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
 :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
@@ -74,14 +82,7 @@ section {
     transform: scale(1.1);
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
 
-strong {
-    font-weight: var(--fw-bold);
-}
 
 /* Typography */
 
@@ -139,7 +140,7 @@ h3 {
 header {
     display: flex;
     justify-content: space-between;
-
+    padding: 1em;
 }
 
 .logo {
@@ -183,9 +184,51 @@ header {
     color: var(--clr-accent);
 }
 
+/* hamburger */
+
+.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after  {
+    background: var(--clr-dark);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+    
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+}
+
+.hamburger::before {top: 6px;}
+.hamburger::after {bottom: 6px;}
+
+
 /* Intro Section */
 
-intro {
+.intro {
     position: relative;
 }
 

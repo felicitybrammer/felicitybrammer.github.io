@@ -7,9 +7,7 @@
     <title>Felicity Brammer Portfolio Website  </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-    
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -23,9 +21,10 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Resume</a></li>
                 <li class="nav__item"><a href="#about-me" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +34,7 @@
         <h1 class="section__title section__title--intro">
             Hi, I am <strong>Felicity Brammer</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+        <p class="section__subtitle section__subtitle--intro">full-stack web developer</p>
         <img src="assets/images/headshot.jpeg" alt="a picture of Felicity Brammer smiling" class="intro__img">
         
     </section>
@@ -45,28 +44,29 @@
         <h2 class="section__title section__title--services">What I Do</h2>
         <div class="services">
             <div class="service">
-                <h3>Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div> <!-- / service -->
+                <h3>Code</h3>
+                <p>I love to build and solve problems with JavaScript</p>
+            </div> 
             <div class="service">
-                <h3>Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div> <!-- / service -->
+                <h3>Refine</h3>
+                <p>I'm really interested in optimization for efficiency and scalability. 
+                    I'm also a big fan of unit tests.</p>
+            </div> 
             <div class="service">
-                <h3>Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div> <!-- / service -->
+                <h3>Repeat</h3>
+                <p>Lifelong learning is my passion.</p>
+            </div> 
         </div>
 
-        <a href="#work" class="btn">My Work</a>
+        <a href="" class="btn">My Resume</a>
     </section>
 
     <!-- About Me -->
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">Who I Am</h2>
-        <p class="section__subtitle section__subtitle--about">Developer based in Canada</p>
+        <p class="section__subtitle section__subtitle--about">A creative problem solver</p>
         <div class="about-me__body">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium esse eius cum dolore quia a facere ad, iusto doloremque aliquam labore vero, dolor distinctio officia ullam aut voluptas voluptate fugit?</p>
+            <p>I love math problems. I love them so much that I became a math teacher and taught teenagers to love math problems too. (Or, at least I taught them to laugh at my jokes)</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, sunt quas at fugit eligendi officia asperiores. Sequi tempora inventore pariatur, quaerat quia voluptas eius optio quis voluptatibus eum earum atque.</p>
         </div>
 
@@ -79,52 +79,117 @@
          <p class="section__subtitle section__subtitle--work ">A selection of my range of work</p>
 
          <div class="portfolio">
-             <!-- portfolio item -->
-             <a href="portfolio-item.html" class="portfolio__item">
-                 <img src="assets/images/Train to the bea.png" alt="" class=portfolio__image>
-             </a>
-              <!-- portfolio item -->
-              <a href="https://felicitybrammer.github.io/organize-me-scheduler/" class="portfolio__item">
-                <img src="assets/images/daily-schedule.png" alt="" class=portfolio__image>
-            </a>
-              <!-- portfolio item -->
-              <a href="https://felicitybrammer.github.io/git-it-done/" class="portfolio__item">
-                <img src="assets/images/Git it Done.png" alt="" class=portfolio__image>
-            </a>
-            
-             <!-- portfolio item -->
-             <a href="https://felicitybrammer.github.io/Pixel-Art-Maker/" class="portfolio__item">
-                <img src="assets/images/Pixel Art Maker!.png" alt="" class=portfolio__image>
-            </a>
-             
-           <!-- portfolio item -->
-             <a href="https://felicitybrammer.github.io/supersecurity-password-generator/" class="portfolio__item">
-                <img src="assets/images/password-generator.png" alt="" class=portfolio__image>
-            </a>
-
+            <span class = "project-wrapper">
+                <!-- portfolio item -->
+                <a href="portfolio-item2.html" class="portfolio__item">
+                    <img src="portfolio-item-images/Ranter.png" alt="" class=portfolio__image>
+                    <div class="overlay-effect"></div>
+                    <!-- <div class="name-tag">
+                        <h5>Ranter</h5>
+                        <p>Node/Express/MVC/JavaScript</p>
+                    </div> -->
+                </a>
+            </span>
+            <span class = "project-wrapper">
+                <!-- portfolio item -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="portfolio-item-images/Song Detail List.png" alt="" class=portfolio__image>
+                    <div class="overlay-effect"></div>
+                    <!-- <div class="name-tag">
+                        <h5></h5>
+                        <p></p>
+                    </div> -->
+                </a>
+            </span>
+            <span class = "project-wrapper">
+                <!-- portfolio item -->
+                <a href="https://gist.github.com/felicitybrammer" class="portfolio__item">
+                    <img src="portfolio-item-images/REGEX-tutorial.png" alt="" class=portfolio__image>
+                
+                    <div class="overlay-effect"></div>
+                    <!-- <div class="name-tag">
+                        <h5></h5>
+                        <p></p>
+                    </div> -->
+                </a>
+            </span>    
+            <span class = "project-wrapper">             
+                <!-- portfolio item -->
+                <a href="https://github.com/felicitybrammer/buy-and-sell-it" class="portfolio__item">
+                    <img src="portfolio-item-images/ecommerce.png" alt="" class=portfolio__image>
+                    <div class="overlay-effect"></div>
+                    <!-- <div class="name-tag">
+                        <h5></h5>
+                        <p></p>
+                    </div> -->
+                </a>
+            </span>     
+            <span class = "project-wrapper">   
+                
             <!-- portfolio item -->
-             <a href="https://felicitybrammer.github.io/taskmaster-pro/" class="portfolio__item">
-                <img src="assets/images/Taskmaster Pro.png" alt="" class=portfolio__image>
-            </a>
-             <!-- portfolio item -->
-             <a href="#" class="portfolio__item">
-                <img src="" alt="" class=portfolio__image>
-            </a>
-            <!-- portfolio item -->
-             <a href="portfolio-item2.html" class="portfolio__item">
-                <img src="portfolio-item-images/Ranter.png" alt="" class=portfolio__image>
-            </a>
-             
-             
-             <!-- portfolio item -->
-             <a href="#" class="portfolio__item">
-                <img src="" alt="" class=portfolio__image>
-            </a>
-
+                <a href="https://github.com/felicitybrammer/never-forget-note-taker" class="portfolio__item">
+                    <img src="portfolio-item-images/note-taker.png" alt="" class=portfolio__image>
+                    <div class="overlay-effect"></div>
+                    <!-- <div class="name-tag">
+                        <h5></h5>
+                        <p></p>
+                    </div> -->
+                </a>
+            </span>    
+               
+            <span class = "project-wrapper">  
+                <!-- portfolio item -->
+                <a href="https://github.com/felicitybrammer/generate-my-team-profile" class="portfolio__item">
+                    <img src="portfolio-item-images/teamprofile.png" alt="" class=portfolio__image>
+                
+                    <div class="overlay-effect"></div>
+                    <!-- <div class="name-tag">
+                        <h5></h5>
+                        <p></p>
+                    </div> -->
+                </a>
+            </span>    
+            <span class = "project-wrapper">  
+                <!-- portfolio item -->
+                <a href="https://github.com/felicitybrammer/supersecurity-password-generator" class="portfolio__item">
+                    <img src="portfolio-item-images/password-generator.png" alt="" class=portfolio__image>
+                    <div class="overlay-effect"></div>
+                    <!-- <div class="name-tag">
+                        <h5></h5>
+                        <p></p>
+                    </div> -->
+                </a>
+            </span>    
+            <span class = "project-wrapper">    
+                <!-- portfolio item -->
+                <a href="https://github.com/felicitybrammer/challenge-yourself-js-quiz" class="portfolio__item">
+                    <img src="portfolio-item-images/JSQuiz.png" alt="" class=portfolio__image>
+                    <div class="overlay-effect"></div>
+                    <!-- <div class="name-tag">
+                        <h5></h5>
+                        <p></p>
+                    </div> -->
+                </a>
+            </span>
+            <span class = "project-wrapper">
+                <!-- portfolio item -->
+                <a href="https://github.com/felicitybrammer/Pixel-Art-Maker" class="portfolio__item">
+                    <img src="portfolio-item-images/Pixel Art Maker!.png" alt="" class=portfolio__image>
+                    <div class="overlay-effect"></div>
+                    <!-- <div class="name-tag">
+                        <h5></h5>
+                        <p></p>
+                    </div> -->
+                </a>
+            </span>
          </div>
      </section>
 
-     <footer class="footer">
+
+         
+
+
+     <footer class="footer" id="contact">
          <a href="mailto:felicitybrammer@gmail.com" class="footer__link">felicitybrammer@gmail.com</a>
          <ul class="social-list">
              <li class="social-list__item">

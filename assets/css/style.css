@@ -423,7 +423,7 @@ header {
     /* sets gaps between projects space-between takes care of the rest */
     margin: 7px 0;
     /* enough room for 2 side by side with room for a little gap*/
-    width: 32%;
+    width: 49%;
 }
 .portfolio__item {
     

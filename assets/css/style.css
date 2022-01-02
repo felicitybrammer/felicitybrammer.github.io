@@ -18,6 +18,7 @@
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
+    --fs-h5: 1rem;
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -30,6 +31,7 @@
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
+        --fs-h5: 1.125rem;
         --fs-body: 1.125rem;
     }
 }
@@ -90,7 +92,7 @@ strong {
 
 /* Typography */
 
-h1,h2,h3 {
+h1,h2,h3, h5 {
     line-height: 1;
     margin:0;
 }
@@ -105,6 +107,10 @@ h2 {
 
 h3 {
     font-size: var(--fs-h3);
+}
+
+h5 {
+    font-size: var(--fs-h5);
 }
 
 .section__title {
@@ -395,22 +401,90 @@ header {
 .my-work {
      background-color: var(--clr-dark);
      color: var(--clr-light);
-     text-align: center;
+     text-align: center;    
 }
 
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     /* can add max-width margin 0 auto */
-}
 
+    display: flex;
+    /* wrap project cards to new lines */
+    flex-wrap: wrap;
+    /* keeps project card against edges of container */
+    justify-content: space-between;
+    
+}
+.project-wrapper {
+    position: relative;
+    top: 0;
+    height: 12.5rem;
+    /* sets gaps between projects space-between takes care of the rest */
+    margin: 7px 0;
+    /* enough room for 2 side by side with room for a little gap*/
+    width: 32%;
+}
 .portfolio__item {
-    background: var(--clr-accent);
+    
     overflow: hidden;
+     display: inline-flex;
+     flex-direction: column;
+     
+     justify-content: flex-end;
+    
+     width: 100%;
+     height: 100%;
+    
+     background-position: center;
+     position: relative;
+     top: 0;
 
 }
 
-.portfolio__img {
+.name-tag {
+    color: var(--clr-dark);
+    background-color: var(--clr-accent);
+    
+    width: -moz-fit-content;
+    width: fit-content;
+    /* extend colored background */
+    padding: 0.3vw;
+    /* keeps the name-tag up from the bottom border */
+    margin-bottom: 0.3vw;
+    /* keep the name tag in front of the overlay */
+    z-index: 2;
+}
+
+.name-tag h5 {
+    font-size: 1rem;
+    /* scaled seperation of the 2 elements in name-tag */
+    /* padding-bottom: .7vw; */
+    text-decoration: none;
+}
+
+.name-tag p {
+    /* imported thin google font */
+    /* font-family: 'Lato', sans-serif; */
+    font-size: 0.2 rem;
+    text-decoration: none;
+}
+
+/* .project-wrapper:first-child {
+    width: 100%;
+    height: 600px;
+} */
+
+.project-wrapper:last-child:nth-child(2n) {
+    width: 100%; 
+} 
+
+.portfolio__image {
+    
+    width:100%;
+    height:100%;
+    object-fit:contain;
+
     transition: 
         transform 750ms cubic-bezier(.5,0,.5,1),
         opacity 250ms linear;
@@ -421,11 +495,33 @@ header {
     z-index: 2;
 }
 
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
+.portfolio__image:hover,
+.portfolio__item:focus .portfolio__image {
     transform: scale(1.2);
     opacity: .75;
 }
+
+
+/* .overlay-effect {
+    
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--clr-light);
+    opacity: .35;
+    transition: .75s ease;
+    transition-delay: .15s;
+} */
+
+.portfolio__item:hover .overlay-effect {
+    /* no delay to style transition entering :hover state */
+    transition-delay: 0s;
+    /* fade out the overlay while changing its color to yellow */
+    opacity: 0;
+    background-color: var(--clr-accent);
+}
+
 
 /* footer */
 

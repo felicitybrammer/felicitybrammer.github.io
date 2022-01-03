@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felicity Brammer Portfolio Website  </title>
+    <title>Felicity Brammer Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="">
+            <i class="fas fa-code fa-2x"></i>
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -22,7 +22,7 @@
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#services" class="nav__link">Resume</a></li>
-                <li class="nav__item"><a href="#about-me" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                 <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
             </ul>
@@ -34,7 +34,7 @@
         <h1 class="section__title section__title--intro">
             Hi, I am <strong>Felicity Brammer</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">full-stack web developer</p>
+        <p class="section__subtitle section__subtitle--intro">Full-Stack Developer</p>
         <img src="assets/images/headshot.jpeg" alt="a picture of Felicity Brammer smiling" class="intro__img">
         
     </section>
@@ -45,20 +45,19 @@
         <div class="services">
             <div class="service">
                 <h3>Code</h3>
-                <p>I love to build and solve problems with JavaScript</p>
+                <p>I love to code and and I love to solve problems. I recently graduated from the Web Development Coding Bootcamp at the University of Toronto where I honed </p>
             </div> 
             <div class="service">
                 <h3>Refine</h3>
-                <p>I'm really interested in optimization for efficiency and scalability. 
-                    I'm also a big fan of unit tests.</p>
+                <p>I'm really interested in optimization for efficiency and scalability. I'm also a big fan of unit tests. I love to find ways to refactor and improve my code and to incorporate new ideas or technologies.</p>
             </div> 
             <div class="service">
                 <h3>Repeat</h3>
-                <p>Lifelong learning is my passion.</p>
+                <p>Lifelong learning is my passion and I'm excited to keep growing and developing my skills and knowledge. I thrive in an environment dedicated to teamwork and cooperation.</p>
             </div> 
         </div>
-
-        <a href="" class="btn">My Resume</a>
+<br>
+        <a href="Tech Resume 2021.pdf" class="btn">Take A Look At My Resume</a>
     </section>
 
     <!-- About Me -->
@@ -67,33 +66,35 @@
         <p class="section__subtitle section__subtitle--about">A creative problem solver</p>
         <div class="about-me__body">
             <p>I love math problems. I love them so much that I became a math teacher and taught teenagers to love math problems too. (Or, at least I taught them to laugh at my jokes)</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, sunt quas at fugit eligendi officia asperiores. Sequi tempora inventore pariatur, quaerat quia voluptas eius optio quis voluptatibus eum earum atque.</p>
+            <p>When I started to include coding skills in my curriculum, I realized that I wanted to be the one to find innovative and effective solution</p>
+            <p>Now I'm looking to be part of , outside of the classroom. </p>
+            <p>I currently work with JavaScript frameworks, and I'm hoping to grow my skills using databases and back-end technologies. I'm really excited to take the leap with the right organization and to start building!</p>
         </div>
-
-        <img src="assets/images/82380519_10158154046336757_5113484210308382720_n.jpeg" alt="" class="about-me__img">
+        <img src="assets/images/82380519_10158154046336757_5113484210308382720_n.jpeg" alt="A photo of Felicity Brammer" class="about-me__img">
     </section>
 
      <!-- My Work -->
      <section class="my-work" id="work">
          <h2 class="section__title section__title--work">My Work</h2>
-         <p class="section__subtitle section__subtitle--work ">A selection of my range of work</p>
+         <p class="section__subtitle section__subtitle--work ">A selection of my projects.</p>
 
          <div class="portfolio">
             <span class = "project-wrapper">
                 <!-- portfolio item -->
                 <a href="portfolio-item2.html" class="portfolio__item">
-                    <img src="portfolio-item-images/Ranter.png" alt="" class=portfolio__image>
+                    <img src="portfolio-item-images/Ranter.png" alt="A screenshot of Ranter" class=portfolio__image>
                     <div class="overlay-effect"></div>
-                    <!-- <div class="name-tag">
-                        <h5>Ranter</h5>
-                        <p>Node/Express/MVC/JavaScript</p>
-                    </div> -->
+                    <div class="name-tag">
+                        <a href="https://ranter2-0.herokuapp.com/login">Ranter</a>
+                        <!-- <h5>Ranter</h5>
+                        <p>Node/Express/MVC/JavaScript</p> -->
+                    </div>
                 </a>
             </span>
             <span class = "project-wrapper">
                 <!-- portfolio item -->
                 <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="portfolio-item-images/Song Detail List.png" alt="" class=portfolio__image>
+                    <img src="portfolio-item-images/Song Detail List.png" alt="A screenshot of Train to the Beat" class=portfolio__image>
                     <div class="overlay-effect"></div>
                     <!-- <div class="name-tag">
                         <h5></h5>
@@ -104,7 +105,7 @@
             <span class = "project-wrapper">
                 <!-- portfolio item -->
                 <a href="https://gist.github.com/felicitybrammer" class="portfolio__item">
-                    <img src="portfolio-item-images/REGEX-tutorial.png" alt="" class=portfolio__image>
+                    <img src="portfolio-item-images/REGEX-tutorial.png" alt="A screenshot of a Gist" class=portfolio__image>
                 
                     <div class="overlay-effect"></div>
                     <!-- <div class="name-tag">
@@ -116,7 +117,7 @@
             <span class = "project-wrapper">             
                 <!-- portfolio item -->
                 <a href="https://github.com/felicitybrammer/buy-and-sell-it" class="portfolio__item">
-                    <img src="portfolio-item-images/ecommerce.png" alt="" class=portfolio__image>
+                    <img src="portfolio-item-images/ecommerce.png" alt="A screenshot from a video walkthrough of route testing with Insomnia" class=portfolio__image>
                     <div class="overlay-effect"></div>
                     <!-- <div class="name-tag">
                         <h5></h5>
@@ -128,7 +129,7 @@
                 
             <!-- portfolio item -->
                 <a href="https://github.com/felicitybrammer/never-forget-note-taker" class="portfolio__item">
-                    <img src="portfolio-item-images/note-taker.png" alt="" class=portfolio__image>
+                    <img src="portfolio-item-images/note-taker.png" alt="A screenshot of Note Taker app" class=portfolio__image>
                     <div class="overlay-effect"></div>
                     <!-- <div class="name-tag">
                         <h5></h5>
@@ -140,7 +141,7 @@
             <span class = "project-wrapper">  
                 <!-- portfolio item -->
                 <a href="https://github.com/felicitybrammer/generate-my-team-profile" class="portfolio__item">
-                    <img src="portfolio-item-images/teamprofile.png" alt="" class=portfolio__image>
+                    <img src="portfolio-item-images/teamprofile.png" alt="A screenshot of a Team Profile generated by the app" class=portfolio__image>
                 
                     <div class="overlay-effect"></div>
                     <!-- <div class="name-tag">
@@ -152,7 +153,7 @@
             <span class = "project-wrapper">  
                 <!-- portfolio item -->
                 <a href="https://github.com/felicitybrammer/supersecurity-password-generator" class="portfolio__item">
-                    <img src="portfolio-item-images/password-generator.png" alt="" class=portfolio__image>
+                    <img src="portfolio-item-images/password-generator.png" alt="A screenshot of a password generated by the app" class=portfolio__image>
                     <div class="overlay-effect"></div>
                     <!-- <div class="name-tag">
                         <h5></h5>
@@ -163,7 +164,7 @@
             <span class = "project-wrapper">    
                 <!-- portfolio item -->
                 <a href="https://github.com/felicitybrammer/challenge-yourself-js-quiz" class="portfolio__item">
-                    <img src="portfolio-item-images/JSQuiz.png" alt="" class=portfolio__image>
+                    <img src="portfolio-item-images/JSQuiz.png" alt="A screenshot of a timed quiz question" class=portfolio__image>
                     <div class="overlay-effect"></div>
                     <!-- <div class="name-tag">
                         <h5></h5>
@@ -174,7 +175,7 @@
             <span class = "project-wrapper">
                 <!-- portfolio item -->
                 <a href="https://github.com/felicitybrammer/Pixel-Art-Maker" class="portfolio__item">
-                    <img src="portfolio-item-images/Pixel Art Maker!.png" alt="" class=portfolio__image>
+                    <img src="portfolio-item-images/Pixel Art Maker!.png" alt="A screenshot of a drawing of a house" class=portfolio__image>
                     <div class="overlay-effect"></div>
                     <!-- <div class="name-tag">
                         <h5></h5>
@@ -193,7 +194,7 @@
          <a href="mailto:felicitybrammer@gmail.com" class="footer__link">felicitybrammer@gmail.com</a>
          <ul class="social-list">
              <li class="social-list__item">
-                 <a class="social-list__link" href="https://linkedin.com">
+                 <a class="social-list__link" href="https://www.linkedin.com/in/felicitybrammer/">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>

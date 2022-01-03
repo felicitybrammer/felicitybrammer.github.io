@@ -423,7 +423,7 @@ header {
     /* sets gaps between projects space-between takes care of the rest */
     margin: 7px 0;
     /* enough room for 2 side by side with room for a little gap*/
-    width: 49%;
+    width: 32%;
 }
 .portfolio__item {
     
@@ -443,12 +443,12 @@ header {
 }
 
 .name-tag {
-    color: var(--clr-dark);
-    background-color: var(--clr-accent);
+    color: var(--clr-);
+    /* background-color: var(--clr-accent); */
     
-    width: -moz-fit-content;
-    width: fit-content;
-    /* extend colored background */
+    /* width: -moz-fit-content;
+    width: fit-content; */
+   line-height: 1;
     padding: 0.3vw;
     /* keeps the name-tag up from the bottom border */
     margin-bottom: 0.3vw;

@@ -545,6 +545,7 @@ img {
     color: var(--clr-dark);
     padding: 0.5rem;
     text-transform: lowercase;
+    
 }
 
 .btn--block {
@@ -596,9 +597,10 @@ img {
 
 .card__content {
     display: flex;
-    /* flex: 1 1 auto; */
+    flex: 1 1 auto;
     flex-direction: column;
     padding: 1rem;
+    justify-content: flex-end;
 }
 
 .card__image {
@@ -627,21 +629,6 @@ img {
     } */
 }
 
-.card__image--flowers {
-    background-image: url(https://unsplash.it/800/600?image=82);
-}
-
-.card__image--river {
-    background-image: url(https://unsplash.it/800/600?image=11);
-}
-
-.card__image--record {
-    background-image: url(https://unsplash.it/800/600?image=39);
-}
-
-.card__image--okcreature {
-    background-image: url(https://unsplash.it/800/600?image=59);
-}
 
 .card__title {
     color: var(--clr-light);

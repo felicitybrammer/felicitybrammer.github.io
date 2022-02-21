@@ -26,7 +26,7 @@
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50rem) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -39,6 +39,7 @@
 /* General Styles */
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {
@@ -48,6 +49,8 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    /* position: relative; */
+    
 }
 
 section {
@@ -281,7 +284,7 @@ header {
     display: inline-block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
     .intro {
         display: grid;
         width: min-content;
@@ -338,13 +341,12 @@ header {
 .service {
     margin-bottom: 4em;
 }
-
 .service {
-    max-width: 500px;
+    max-width: 31.25rem;
     margin: 0 auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
     .services {
         display: flex;
         /* max-width: 1500px; */
@@ -372,10 +374,10 @@ header {
     box-shadow: var(--bs);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
     .about-me {
         display: grid;
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr 12.5rem;
         grid-template-areas:
             "title img"
             "subtitle img"
@@ -411,7 +413,7 @@ header {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;

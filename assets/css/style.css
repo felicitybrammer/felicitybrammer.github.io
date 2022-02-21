@@ -58,7 +58,6 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-    /* vertical-align: middle; */
 }
 
 strong {
@@ -278,7 +277,6 @@ header {
     box-shadow: var(--bs);
 }
 
-/* can leave this out */
 .section__subtitle--intro {
     display: inline-block;
 }
@@ -317,12 +315,8 @@ header {
 /* My services section */
 
 .my-services {
-    /* background-color: var(--clr-dark); */
-    background-image: url(../images/services-bg.jpg);
     background-size: cover;
-    /* can leave out */
     background-blend-mode: multiply;
-    /* color: var(--clr-light); */
     text-align: center;
 }
 
@@ -350,7 +344,7 @@ header {
     margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .services {
         display: flex;
         /* max-width: 1500px; */
@@ -370,7 +364,7 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     background-size: cover;
-    max-width: 1500px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -394,13 +388,6 @@ header {
     }
 
     .section__subtitle--about {
-        /* grid-column: 1/-1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em); */
         color: var(--clr-dark)
     }
 
@@ -411,18 +398,13 @@ header {
     }
 }
 
-
-
-
-
-
 /* My Work */
 
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
-    max-width: 1500px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -434,7 +416,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .portfolio__item {
@@ -476,7 +458,16 @@ header {
     background-color: var(--clr-accent);
 }
 
+@media (min-width: 600px) {
+    .cards {
+        display: flex;
+        /* max-width: 1500px; */
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+   
+}
 
 
 *,
@@ -529,15 +520,23 @@ header {
     width: 50%;
     align-content: center;
     margin: 0 auto;
+}
 
-    /* @media (min-width: 40rem) {
-       width: 90%;
+   @media screen and (max-width: 40rem) {
+       .cards__item {
+        display: flex;  
+        flex-direction: column; 
+        width: 90%;
+       }
     }
 
-    @media(min-width: 56rem) {
-        width: 90%;
-    } */
-}
+    /* @media screen and (min-width: 56rem) {
+       .cards__item {
+        display: flex;
+            width: 90%;
+       }
+    }  */
+
 
 .card {
     background-color: var(--clr-dark);
